@@ -223,21 +223,31 @@ class EmpRegistrationController extends Controller
 public function actionreset()
  {      
   
-   $model = new EmpRegistration();
-
+   
+$model=new EmpRegistration();
 
  if (isset($_POST['old_password']))
 		{
 	
 		$oldid = $_POST['old_password'];
-		$record=EmpRegistration::model()->findByAttributes(array('emp_password' => Yii::app()->request->getPost('old_password')));
+		$record=EmpRegistration::model()->findByAttributes(array('emp_password' =>$oldid));
 		if(empty($record))
 		{
-			$message="please valid password";
-			$this->render('reset',array('message'=>$message,
-					'model'=>$model,
-			));
+					
+			Yii::app()->user->setFlash('error', "INVALID PASSWORD");
+		
+					
+			
 		}
+		else if($_POST['new_password']==$_POST['old_password'])
+		{
+			Yii::app()->user->setFlash('error', "old password and new password same");
+		}
+		else if($_POST['new_password']!=$_POST['confirm_password'])
+		{
+			Yii::app()->user->setFlash('error', "new password and confirm password does not matched");
+		}
+		else{
 		$newPassword = $_POST['new_password'];
 		$userid= Yii::app()->user->getState("user_id");
 		
@@ -248,10 +258,13 @@ public function actionreset()
 				$this->redirect(array('view','id'=>$model->emp_id));
 	
 		}
-		$message="";
-		$this->render('reset',array('message'=>$message,
-				'model'=>$model,
+		}
+	
+	
+		$this->render('reset',array(
+			'model'=>$model,
 		));
+	
  }
 	
 	

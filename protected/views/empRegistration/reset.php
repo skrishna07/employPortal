@@ -1,6 +1,10 @@
 
 <div class="form">
-<?php echo "<b>".$message."</b>" ?>
+<?php
+    foreach(Yii::app()->user->getFlashes() as $key => $message) {
+        echo '<div class="flash-' . $key . '">' . $message . "</div>\n";
+    }
+?>
 <form method="post" action="/employPortal/index.php/empRegistration/reset" >
 <div class="row">
 old password:<input type="password" name="old_password" required/></div>

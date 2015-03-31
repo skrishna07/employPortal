@@ -6,7 +6,7 @@ class EmpHelppageController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	public $layout='//layouts/main';
 
 	/**
 	 * @return array action filters
@@ -28,16 +28,16 @@ class EmpHelppageController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('create'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-				'users'=>array('@'),
+				'actions'=>array('create','update','view','index','admin'),
+				'roles'=>array('general'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'roles'=>array('admin'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -74,10 +74,29 @@ class EmpHelppageController extends Controller
 			
 			$model->createdate=date("Y-m-d",$date);
 			$model->updateddate=date("Y-m-d",$date);
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->page_id));
-		}
-
+			$model->save();
+		$tags=$_POST['tags'];
+			$tag=explode(',', $tags);
+			
+			for($i=0;$i<count($tag);$i++)
+			{
+			$model2=new EmpHelppageTags();
+			//$model->menu_id=$menus[$i];
+			$model2->page_id=$model->page_id;
+			$model2->tags=$tag[$i];
+			if($model2->save()){
+			$valid = true;
+			}else{
+				$valid = false;
+			}
+			
+			
+			}
+				
+			if($valid)
+				$this->redirect(array('admin'));
+			}
+		
 		$this->render('create',array(
 			'model'=>$model,
 		));
@@ -98,10 +117,29 @@ class EmpHelppageController extends Controller
 		if(isset($_POST['EmpHelppage']))
 		{
 			$model->attributes=$_POST['EmpHelppage'];
+			$date=time();
 			$model->updateddate=date("Y-m-d",$date);
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->page_id));
-		}
+		$tags=$_POST['tags'];
+			$tag=explode(',', $tags);
+			
+			for($i=0;$i<count($tag);$i++)
+			{
+			$model2=new EmpHelppageTags();
+			//$model->menu_id=$menus[$i];
+			$model2->page_id=$model->page_id;
+			$model2->tags=$tag[$i];
+			if($model2->save()&&$model->save()){
+			$valid = true;
+			}else{
+				$valid = false;
+			}
+			
+			
+			}
+				
+			if($valid)
+				$this->redirect(array('admin'));
+			}
 
 		$this->render('update',array(
 			'model'=>$model,

@@ -6542,3 +6542,1401 @@ Stack trace:
 REQUEST_URI=/employPortal/index.php/Empregistration/reset
 in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (252)
 in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/30 17:37:35 [error] [php] Undefined variable: message (C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(869): EmpRegistrationController->renderFile()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(782): EmpRegistrationController->renderPartial()
+#2 C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php(256): EmpRegistrationController->render()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(49): EmpRegistrationController->actionreset()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpRegistrationController->runAction()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpRegistrationController->filterAccessControl()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpRegistrationController->runActionWithFilters()
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpRegistrationController->run()
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/Empregistration/reset
+in C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php (3)
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (256)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/30 17:37:43 [error] [php] Undefined variable: message (C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(869): EmpRegistrationController->renderFile()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(782): EmpRegistrationController->renderPartial()
+#2 C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php(256): EmpRegistrationController->render()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(49): EmpRegistrationController->actionreset()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpRegistrationController->runAction()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpRegistrationController->filterAccessControl()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpRegistrationController->runActionWithFilters()
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpRegistrationController->run()
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/Empregistration/reset
+in C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php (3)
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (256)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/30 17:37:49 [error] [php] Undefined variable: message (C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(869): EmpRegistrationController->renderFile()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(782): EmpRegistrationController->renderPartial()
+#2 C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php(256): EmpRegistrationController->render()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(49): EmpRegistrationController->actionreset()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpRegistrationController->runAction()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpRegistrationController->filterAccessControl()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpRegistrationController->runActionWithFilters()
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpRegistrationController->run()
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/Empregistration/reset
+in C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php (3)
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (256)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/30 17:38:34 [error] [php] Undefined variable: message (C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php:254)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpRegistrationController->runAction()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpRegistrationController->filterAccessControl()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpRegistrationController->runActionWithFilters()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpRegistrationController->run()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/Empregistration/reset
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (254)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/30 17:38:51 [error] [php] Undefined variable: message (C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php:252)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpRegistrationController->runAction()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpRegistrationController->filterAccessControl()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpRegistrationController->runActionWithFilters()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpRegistrationController->run()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/Empregistration/reset
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (252)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/30 17:39:23 [error] [php] Undefined variable: message (C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(869): EmpRegistrationController->renderFile()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(782): EmpRegistrationController->renderPartial()
+#2 C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php(254): EmpRegistrationController->render()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(49): EmpRegistrationController->actionreset()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpRegistrationController->runAction()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpRegistrationController->filterAccessControl()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpRegistrationController->runActionWithFilters()
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpRegistrationController->run()
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/Empregistration/reset
+in C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php (3)
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (254)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/30 17:40:18 [error] [php] Undefined variable: message (C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php:252)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpRegistrationController->runAction()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpRegistrationController->filterAccessControl()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpRegistrationController->runActionWithFilters()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpRegistrationController->run()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/Empregistration/reset
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (252)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/30 17:42:37 [error] [php] Undefined variable: message (C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(869): EmpRegistrationController->renderFile()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(782): EmpRegistrationController->renderPartial()
+#2 C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php(256): EmpRegistrationController->render()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(49): EmpRegistrationController->actionreset()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpRegistrationController->runAction()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpRegistrationController->filterAccessControl()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpRegistrationController->runActionWithFilters()
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpRegistrationController->run()
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/Empregistration/reset
+in C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php (3)
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (256)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/30 17:44:10 [error] [php] Undefined variable: message (C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php:254)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpRegistrationController->runAction()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpRegistrationController->filterAccessControl()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpRegistrationController->runActionWithFilters()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpRegistrationController->run()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/Empregistration/reset
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (254)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/30 17:48:38 [error] [php] urlencode() expects parameter 1 to be string, object given (C:\xampp\htdocs\employPortal\protected\framework\web\CUrlManager.php:437)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\CUrlManager.php(299): CUrlRule->createUrl()
+#1 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(531): CUrlManager->createUrl()
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(967): CWebApplication->createUrl()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1028): EmpRegistrationController->createUrl()
+#4 C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php(237): EmpRegistrationController->redirect()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(49): EmpRegistrationController->actionreset()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpRegistrationController->runAction()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpRegistrationController->filterAccessControl()
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpRegistrationController->runActionWithFilters()
+#14 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpRegistrationController->run()
+#15 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/empRegistration/reset
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (237)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 06:55:58 [error] [php] Undefined variable: message2 (C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php:254)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpRegistrationController->runAction()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpRegistrationController->filterAccessControl()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpRegistrationController->runActionWithFilters()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpRegistrationController->run()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/empRegistration/reset
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (254)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 06:58:04 [error] [php] Undefined variable: message (C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php:258)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpRegistrationController->runAction()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpRegistrationController->filterAccessControl()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpRegistrationController->runActionWithFilters()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpRegistrationController->run()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/Empregistration/reset
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (258)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 06:59:31 [error] [php] Undefined variable: message (C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php:258)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpRegistrationController->runAction()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpRegistrationController->filterAccessControl()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpRegistrationController->runActionWithFilters()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpRegistrationController->run()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/empRegistration/reset
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (258)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 07:02:48 [error] [php] Undefined variable: message (C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(869): EmpRegistrationController->renderFile()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(782): EmpRegistrationController->renderPartial()
+#2 C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php(259): EmpRegistrationController->render()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(49): EmpRegistrationController->actionreset()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpRegistrationController->runAction()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpRegistrationController->filterAccessControl()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpRegistrationController->runActionWithFilters()
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpRegistrationController->run()
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/empRegistration/reset
+in C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php (3)
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (259)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 07:04:08 [error] [php] Undefined variable: message (C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(869): EmpRegistrationController->renderFile()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(782): EmpRegistrationController->renderPartial()
+#2 C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php(259): EmpRegistrationController->render()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(49): EmpRegistrationController->actionreset()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpRegistrationController->runAction()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpRegistrationController->filterAccessControl()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpRegistrationController->runActionWithFilters()
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpRegistrationController->run()
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/empRegistration/reset
+in C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php (3)
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (259)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 07:04:36 [error] [php] Undefined variable: message (C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(869): EmpRegistrationController->renderFile()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(782): EmpRegistrationController->renderPartial()
+#2 C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php(257): EmpRegistrationController->render()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(49): EmpRegistrationController->actionreset()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpRegistrationController->runAction()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpRegistrationController->filterAccessControl()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpRegistrationController->runActionWithFilters()
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpRegistrationController->run()
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/empRegistration/reset
+in C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php (3)
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (257)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 07:04:59 [error] [php] Undefined variable: message (C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(869): EmpRegistrationController->renderFile()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(782): EmpRegistrationController->renderPartial()
+#2 C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php(257): EmpRegistrationController->render()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(49): EmpRegistrationController->actionreset()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpRegistrationController->runAction()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpRegistrationController->filterAccessControl()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpRegistrationController->runActionWithFilters()
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpRegistrationController->run()
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/empRegistration/reset
+in C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php (3)
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (257)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 07:06:13 [error] [php] Undefined variable: message (C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php:257)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpRegistrationController->runAction()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpRegistrationController->filterAccessControl()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpRegistrationController->runActionWithFilters()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpRegistrationController->run()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/empRegistration/reset
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (257)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 07:09:16 [error] [php] Undefined variable: message (C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(869): EmpRegistrationController->renderFile()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(782): EmpRegistrationController->renderPartial()
+#2 C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php(257): EmpRegistrationController->render()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(49): EmpRegistrationController->actionreset()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpRegistrationController->runAction()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpRegistrationController->filterAccessControl()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpRegistrationController->runActionWithFilters()
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpRegistrationController->run()
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/empRegistration/reset
+in C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php (3)
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (257)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 07:12:14 [error] [php] Undefined variable: form (C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(869): EmpRegistrationController->renderFile()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(782): EmpRegistrationController->renderPartial()
+#2 C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php(257): EmpRegistrationController->render()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(49): EmpRegistrationController->actionreset()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpRegistrationController->runAction()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpRegistrationController->filterAccessControl()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpRegistrationController->runActionWithFilters()
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpRegistrationController->run()
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/empRegistration/reset
+in C:\xampp\htdocs\employPortal\protected\views\empRegistration\reset.php (3)
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php (257)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 07:43:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empRegistration...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empRegistration/admin
+HTTP_REFERER=http://localhost/employPortal/index.php/empRegistration/index
+---
+2015/03/31 07:43:18 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empRegistration...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empRegistration/admin
+HTTP_REFERER=http://localhost/employPortal/index.php/empRegistration/admin
+---
+2015/03/31 07:44:01 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empRegistration...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empRegistration/admin
+HTTP_REFERER=http://localhost/employPortal/index.php/empRegistration/admin
+---
+2015/03/31 07:44:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empRegistration...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empRegistration/admin
+HTTP_REFERER=http://localhost/employPortal/index.php/empRegistration/admin
+---
+2015/03/31 08:01:01 [error] [exception.CException] exception 'CException' with message 'The attribute must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in C:\xampp\htdocs\employPortal\protected\framework\zii\widgets\CDetailView.php:180
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\CBaseController.php(173): CDetailView->run()
+#1 C:\xampp\htdocs\employPortal\protected\views\empRegistration\view.php(34): CBaseController->widget('zii.widgets.CDe...', Array)
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\employPortal\protected\controllers\EmpRegistrationController.php(56): CController->render('view', Array)
+#7 [internal function]: EmpRegistrationController->actionView('18')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(EmpRegistrationController), Array)
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(EmpRegistrationController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empRegistration...')
+#20 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/employPortal/index.php/empRegistration/18
+HTTP_REFERER=http://localhost/employPortal/index.php/empRegistration/admin
+---
+2015/03/31 08:03:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "empDocumenttags/create".' in C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empDocumenttags...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/employPortal/index.php/empDocumenttags/create
+---
+2015/03/31 08:13:13 [error] [exception.CException] exception 'CException' with message 'Property "EmpDocument.tags" is not defined.' in C:\xampp\htdocs\employPortal\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\db\ar\CActiveRecord.php(143): CComponent->__get('tags')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('tags')
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(EmpDocument), 'tags')
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(EmpDocument), 'tags', Array)
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(EmpDocument), 'tags', Array)
+#5 C:\xampp\htdocs\employPortal\protected\views\empDocument\_form.php(25): CActiveForm->textField(Object(EmpDocument), 'tags')
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\employPortal\protected\views\empDocument\create.php(18): CController->renderPartial('_form', Array)
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php(83): CController->render('create', Array)
+#15 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(49): EmpDocumentController->actionCreate()
+#16 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#25 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empDocument/cre...')
+#26 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/employPortal/index.php/empDocument/create
+HTTP_REFERER=http://localhost/employPortal/index.php/empRegistration/create
+---
+2015/03/31 08:14:06 [error] [exception.CException] exception 'CException' with message 'Property "EmpDocument.tags" is not defined.' in C:\xampp\htdocs\employPortal\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\db\ar\CActiveRecord.php(143): CComponent->__get('tags')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('tags')
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(EmpDocument), 'tags')
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(EmpDocument), 'tags', Array)
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(EmpDocument), 'tags', Array)
+#5 C:\xampp\htdocs\employPortal\protected\views\empDocument\_form.php(25): CActiveForm->textField(Object(EmpDocument), 'tags')
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\employPortal\protected\views\empDocument\create.php(18): CController->renderPartial('_form', Array)
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php(83): CController->render('create', Array)
+#15 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(49): EmpDocumentController->actionCreate()
+#16 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#25 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empDocument/cre...')
+#26 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/employPortal/index.php/empDocument/create
+HTTP_REFERER=http://localhost/employPortal/index.php/empRegistration/create
+---
+2015/03/31 08:16:00 [warning] [application] Failed to set unsafe attribute "tags" of "EmpDocument".
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php (72)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 08:17:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empDocument/adm...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empDocument/admin
+HTTP_REFERER=http://localhost/employPortal/index.php/empDocument/index
+---
+2015/03/31 08:27:48 [warning] [application] Failed to set unsafe attribute "tags" of "EmpDocument".
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php (72)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 08:21:25 [warning] [application] Failed to set unsafe attribute "tags" of "EmpDocument".
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php (72)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 08:31:47 [warning] [application] Failed to set unsafe attribute "tags" of "EmpDocument".
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php (72)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 08:32:03 [error] [php] Undefined index: EmpDocument[tags] (C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php:80)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpDocumentController->runAction()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpDocumentController->filterAccessControl()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpDocumentController->runActionWithFilters()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpDocumentController->run()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/empDocument/create
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php (80)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 08:34:20 [warning] [application] Failed to set unsafe attribute "tags" of "EmpDocument".
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php (72)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 08:34:23 [error] [php] Undefined index: EmpDocument[tags] (C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php:80)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpDocumentController->runAction()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpDocumentController->filterAccessControl()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpDocumentController->runActionWithFilters()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpDocumentController->run()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/empDocument/create
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php (80)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 08:43:30 [warning] [application] Failed to set unsafe attribute "tags" of "EmpDocument".
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php (73)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 08:43:30 [error] [php] Undefined index: tags (C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php:81)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpDocumentController->runAction()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpDocumentController->filterAccessControl()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpDocumentController->runActionWithFilters()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpDocumentController->run()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/empDocument/create
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php (81)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 09:08:08 [error] [exception.CException] exception 'CException' with message 'Property "EmpDocTags.doc_uploadedby" is not defined.' in C:\xampp\htdocs\employPortal\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\db\ar\CActiveRecord.php(143): CComponent->__get('doc_uploadedby')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('doc_uploadedby')
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(EmpDocTags), 'doc_uploadedby')
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(EmpDocTags), 'doc_uploadedby', Array)
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(EmpDocTags), 'doc_uploadedby', Array)
+#5 C:\xampp\htdocs\employPortal\protected\views\empDocument\_form.php(27): CActiveForm->textField(Object(EmpDocTags), 'doc_uploadedby', Array)
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\employPortal\protected\views\empDocument\create.php(18): CController->renderPartial('_form', Array)
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php(105): CController->render('create', Array)
+#15 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(49): EmpDocumentController->actionCreate()
+#16 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#25 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empDocument/cre...')
+#26 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/employPortal/index.php/empDocument/create
+HTTP_REFERER=http://localhost/employPortal/
+---
+2015/03/31 09:11:52 [error] [exception.CException] exception 'CException' with message 'Property "EmpDocTags.doc_uploadedby" is not defined.' in C:\xampp\htdocs\employPortal\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\db\ar\CActiveRecord.php(143): CComponent->__get('doc_uploadedby')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\helpers\CHtml.php(2255): CActiveRecord->__get('doc_uploadedby')
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\helpers\CHtml.php(1980): CHtml::resolveValue(Object(EmpDocTags), 'doc_uploadedby')
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\helpers\CHtml.php(1257): CHtml::activeInputField('text', Object(EmpDocTags), 'doc_uploadedby', Array)
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\widgets\CActiveForm.php(657): CHtml::activeTextField(Object(EmpDocTags), 'doc_uploadedby', Array)
+#5 C:\xampp\htdocs\employPortal\protected\views\empDocument\_form.php(27): CActiveForm->textField(Object(EmpDocTags), 'doc_uploadedby', Array)
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\employPortal\protected\views\empDocument\create.php(18): CController->renderPartial('_form', Array)
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(782): CController->renderPartial('create', Array, true)
+#14 C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php(105): CController->render('create', Array)
+#15 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(49): EmpDocumentController->actionCreate()
+#16 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#19 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#23 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#25 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empDocument/cre...')
+#26 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#27 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/employPortal/index.php/empDocument/create
+HTTP_REFERER=http://localhost/employPortal/
+---
+2015/03/31 09:44:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empDocument/adm...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empDocument/admin
+HTTP_REFERER=http://localhost/employPortal/index.php/empDocument/create
+---
+2015/03/31 09:44:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empDocument/adm...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empDocument/admin
+HTTP_REFERER=http://localhost/employPortal/index.php/empDocument/create
+---
+2015/03/31 09:45:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empDocument/ind...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empDocument/index
+HTTP_REFERER=http://localhost/employPortal/index.php/empDocument/create
+---
+2015/03/31 09:45:56 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empDocument/ind...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empDocument/index
+HTTP_REFERER=http://localhost/employPortal/index.php/empDocument/admin
+---
+2015/03/31 09:46:14 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empDocument/adm...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empDocument/admin
+HTTP_REFERER=http://localhost/employPortal/index.php/empDocument/admin
+---
+2015/03/31 09:55:41 [error] [php] Undefined variable: tags (C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php:88)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpDocumentController->runAction()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpDocumentController->filterAccessControl()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpDocumentController->runActionWithFilters()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpDocumentController->run()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/empDocument/create
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php (88)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 10:02:44 [error] [php] explode() expects parameter 2 to be string, array given (C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php:81)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpDocumentController->runAction()
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpDocumentController->filterAccessControl()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpDocumentController->runActionWithFilters()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpDocumentController->run()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/empDocument/create
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php (81)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 10:03:13 [error] [php] explode() expects parameter 2 to be string, array given (C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php:81)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpDocumentController->runAction()
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpDocumentController->filterAccessControl()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpDocumentController->runActionWithFilters()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpDocumentController->run()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/empDocument/create
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php (81)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 10:03:58 [error] [php] explode() expects parameter 2 to be string, array given (C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php:81)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpDocumentController->runAction()
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpDocumentController->filterAccessControl()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpDocumentController->runActionWithFilters()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpDocumentController->run()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/empDocument/create
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php (81)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 10:04:58 [error] [php] explode() expects parameter 2 to be string, array given (C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php:81)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpDocumentController->runAction()
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpDocumentController->filterAccessControl()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpDocumentController->runActionWithFilters()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpDocumentController->run()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/empDocument/create
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php (81)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 10:05:29 [error] [php] explode() expects parameter 2 to be string, array given (C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php:81)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpDocumentController->runAction()
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpDocumentController->filterAccessControl()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpDocumentController->runActionWithFilters()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpDocumentController->run()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/empDocument/create
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php (81)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 10:13:15 [error] [exception.CException] exception 'CException' with message 'Property "EmpHelppage.doc_id" is not defined.' in C:\xampp\htdocs\employPortal\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\db\ar\CActiveRecord.php(143): CComponent->__get('doc_id')
+#1 C:\xampp\htdocs\employPortal\protected\controllers\EmpHelppageController.php(84): CActiveRecord->__get('doc_id')
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(49): EmpHelppageController->actionCreate()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empHelppage/cre...')
+#13 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/employPortal/index.php/empHelppage/create
+HTTP_REFERER=http://localhost/employPortal/index.php/empHelppage/create
+---
+2015/03/31 10:13:42 [error] [exception.CException] exception 'CException' with message 'Property "EmpDocTags.page_id" is not defined.' in C:\xampp\htdocs\employPortal\protected\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\db\ar\CActiveRecord.php(159): CComponent->__set('page_id', NULL)
+#1 C:\xampp\htdocs\employPortal\protected\controllers\EmpHelppageController.php(84): CActiveRecord->__set('page_id', NULL)
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(49): EmpHelppageController->actionCreate()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('create')
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empHelppage/cre...')
+#13 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/employPortal/index.php/empHelppage/create
+HTTP_REFERER=http://localhost/employPortal/index.php/empHelppage/create
+---
+2015/03/31 11:06:30 [error] [php] Undefined variable: date (C:\xampp\htdocs\employPortal\protected\controllers\EmpHelppageController.php:119)
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): EmpHelppageController->runAction()
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): EmpHelppageController->filterAccessControl()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): EmpHelppageController->runActionWithFilters()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): EmpHelppageController->run()
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\employPortal\index.php(13): CWebApplication->run()
+REQUEST_URI=/employPortal/index.php/empHelppage/update/2
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpHelppageController.php (119)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 11:08:34 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empHelppage/vie...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empHelppage/2
+HTTP_REFERER=http://localhost/employPortal/index.php/empHelppage/update/2
+---
+2015/03/31 11:10:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empHelppage/vie...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empHelppage/2
+HTTP_REFERER=http://localhost/employPortal/index.php/empHelppage/admin
+---
+2015/03/31 11:11:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empHelppage/vie...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empHelppage/2
+HTTP_REFERER=http://localhost/employPortal/index.php/empHelppage/admin
+---
+2015/03/31 11:11:28 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empHelppage/ind...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empHelppage/index
+HTTP_REFERER=http://localhost/employPortal/index.php/empHelppage/2
+---
+2015/03/31 11:11:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empHelppage/ind...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empHelppage/index
+HTTP_REFERER=http://localhost/employPortal/index.php/empHelppage/create
+---
+2015/03/31 11:11:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empHelppage/ind...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empHelppage/index
+HTTP_REFERER=http://localhost/employPortal/index.php/empHelppage/create
+---
+2015/03/31 11:11:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empHelppage/ind...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empHelppage/index
+HTTP_REFERER=http://localhost/employPortal/index.php/empHelppage/index
+---
+2015/03/31 11:12:01 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empHelppage/ind...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empHelppage/index
+HTTP_REFERER=http://localhost/employPortal/index.php/empHelppage/index
+---
+2015/03/31 11:12:11 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empHelppage/ind...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empHelppage/index
+HTTP_REFERER=http://localhost/employPortal/index.php/empHelppage/index
+---
+2015/03/31 11:12:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empDocument/ind...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empDocument/index
+HTTP_REFERER=http://localhost/employPortal/index.php/empDocument/create
+---
+2015/03/31 11:12:34 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('index')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empDocument/ind...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empDocument/index
+HTTP_REFERER=http://localhost/employPortal/index.php/empDocument/admin
+---
+2015/03/31 11:16:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`employportal`.`emp_helppage_tags`, CONSTRAINT `emp_helppage_tags_ibfk_1` FOREIGN KEY (`page_id`) REFERENCES `emp_helppage` (`page_id`)). The SQL statement executed was: DELETE FROM `emp_helppage` WHERE `emp_helppage`.`page_id`=4.
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpHelppageController.php (137)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 11:16:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`employportal`.`emp_helppage_tags`, CONSTRAINT `emp_helppage_tags_ibfk_1` FOREIGN KEY (`page_id`) REFERENCES `emp_helppage` (`page_id`)). The SQL statement executed was: DELETE FROM `emp_helppage` WHERE `emp_helppage`.`page_id`=4' in C:\xampp\htdocs\employPortal\protected\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\db\ar\CActiveRecord.php(1745): CDbCommand->execute()
+#1 C:\xampp\htdocs\employPortal\protected\framework\db\ar\CActiveRecord.php(1168): CActiveRecord->deleteByPk('4')
+#2 C:\xampp\htdocs\employPortal\protected\controllers\EmpHelppageController.php(137): CActiveRecord->delete()
+#3 [internal function]: EmpHelppageController->actionDelete('4')
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(EmpHelppageController), Array)
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(EmpHelppageController), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1116): CFilterChain->run()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('delete')
+#18 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empHelppage/del...')
+#19 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/employPortal/index.php/empHelppage/delete/4?ajax=emp-helppage-grid
+HTTP_REFERER=http://localhost/employPortal/index.php/empHelppage/admin
+---
+2015/03/31 11:21:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empDocument/adm...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empDocument/admin
+HTTP_REFERER=http://localhost/employPortal/index.php/empHelppage/4
+---
+2015/03/31 11:21:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empHelppage/adm...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empHelppage/admin
+HTTP_REFERER=http://localhost/employPortal/index.php/empDocument/admin
+---
+2015/03/31 11:21:55 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empHelppage/adm...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empHelppage/admin
+HTTP_REFERER=http://localhost/employPortal/index.php/empHelppage/admin
+---
+2015/03/31 11:22:05 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empDocument/adm...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empDocument/admin
+HTTP_REFERER=http://localhost/employPortal/index.php/empDocument/index
+---
+2015/03/31 11:22:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empDocument/adm...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empDocument/admin
+HTTP_REFERER=http://localhost/employPortal/index.php/empDocument/create
+---
+2015/03/31 11:22:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empDocument/adm...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empDocument/admin
+HTTP_REFERER=http://localhost/employPortal/index.php/empDocument/index
+---
+2015/03/31 11:23:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empDocument/adm...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empDocument/admin
+HTTP_REFERER=http://localhost/employPortal/index.php/empDocument/index
+---
+2015/03/31 11:23:34 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php:179
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\web\auth\CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(WebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empHelppage/del...')
+#9 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/employPortal/index.php/empHelppage/delete/4?ajax=emp-helppage-grid
+HTTP_REFERER=http://localhost/employPortal/index.php/empHelppage/admin
+---
+2015/03/31 11:31:37 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`employportal`.`emp_helppage_tags`, CONSTRAINT `emp_helppage_tags_ibfk_1` FOREIGN KEY (`page_id`) REFERENCES `emp_helppage` (`page_id`)). The SQL statement executed was: DELETE FROM `emp_helppage` WHERE `emp_helppage`.`page_id`=4.
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpHelppageController.php (162)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 11:31:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`employportal`.`emp_helppage_tags`, CONSTRAINT `emp_helppage_tags_ibfk_1` FOREIGN KEY (`page_id`) REFERENCES `emp_helppage` (`page_id`)). The SQL statement executed was: DELETE FROM `emp_helppage` WHERE `emp_helppage`.`page_id`=4' in C:\xampp\htdocs\employPortal\protected\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\db\ar\CActiveRecord.php(1745): CDbCommand->execute()
+#1 C:\xampp\htdocs\employPortal\protected\framework\db\ar\CActiveRecord.php(1168): CActiveRecord->deleteByPk('4')
+#2 C:\xampp\htdocs\employPortal\protected\controllers\EmpHelppageController.php(162): CActiveRecord->delete()
+#3 [internal function]: EmpHelppageController->actionDelete('4')
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(EmpHelppageController), Array)
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(EmpHelppageController), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1116): CFilterChain->run()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('delete')
+#18 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empHelppage/del...')
+#19 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/employPortal/index.php/empHelppage/delete/4?ajax=emp-helppage-grid
+HTTP_REFERER=http://localhost/employPortal/index.php/empHelppage/admin
+---
+2015/03/31 12:12:39 [error] [exception.CException] exception 'CException' with message 'Property "EmpDocument.page_id" is not defined.' in C:\xampp\htdocs\employPortal\protected\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\db\ar\CActiveRecord.php(143): CComponent->__get('page_id')
+#1 C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php(135): CActiveRecord->__get('page_id')
+#2 [internal function]: EmpDocumentController->actionUpdate('39')
+#3 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(EmpDocumentController), Array)
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(EmpDocumentController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('update')
+#14 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empDocument/upd...')
+#15 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/employPortal/index.php/empDocument/update/39
+HTTP_REFERER=http://localhost/employPortal/index.php/empDocument/update/39
+---
+2015/03/31 12:14:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`employportal`.`emp_doc_tags`, CONSTRAINT `emp_doc_tags_ibfk_1` FOREIGN KEY (`doc_id`) REFERENCES `emp_document` (`doc_id`)). The SQL statement executed was: DELETE FROM `emp_document` WHERE `emp_document`.`doc_id`=39.
+in C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php (163)
+in C:\xampp\htdocs\employPortal\index.php (13)
+2015/03/31 12:14:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`employportal`.`emp_doc_tags`, CONSTRAINT `emp_doc_tags_ibfk_1` FOREIGN KEY (`doc_id`) REFERENCES `emp_document` (`doc_id`)). The SQL statement executed was: DELETE FROM `emp_document` WHERE `emp_document`.`doc_id`=39' in C:\xampp\htdocs\employPortal\protected\framework\db\CDbCommand.php:357
+Stack trace:
+#0 C:\xampp\htdocs\employPortal\protected\framework\db\ar\CActiveRecord.php(1745): CDbCommand->execute()
+#1 C:\xampp\htdocs\employPortal\protected\framework\db\ar\CActiveRecord.php(1168): CActiveRecord->deleteByPk('39')
+#2 C:\xampp\htdocs\employPortal\protected\controllers\EmpDocumentController.php(163): CActiveRecord->delete()
+#3 [internal function]: EmpDocumentController->actionDelete('39')
+#4 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(EmpDocumentController), Array)
+#5 C:\xampp\htdocs\employPortal\protected\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(EmpDocumentController), Object(ReflectionMethod), Array)
+#6 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1116): CFilterChain->run()
+#9 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#10 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\employPortal\protected\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(291): CFilterChain->run()
+#16 C:\xampp\htdocs\employPortal\protected\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(282): CController->run('delete')
+#18 C:\xampp\htdocs\employPortal\protected\framework\web\CWebApplication.php(141): CWebApplication->runController('empDocument/del...')
+#19 C:\xampp\htdocs\employPortal\protected\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\employPortal\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/employPortal/index.php/empDocument/delete/39
+HTTP_REFERER=http://localhost/employPortal/index.php/empDocument/39
+---

@@ -20,7 +20,11 @@
 		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'content'); ?>
 	</div>
-
+<div class="row">
+		<?php echo $form->labelEx($model,'tags'); ?>
+		<input size="30" maxlength="30" name="tags" id="EmpDocument_help_tags" type="text" />
+		<?php echo $form->error($model,'tags'); ?>
+	</div>
 	<div class="row">
 		<?php echo $form->labelEx($model,'content_uploadedby'); ?>
 		<?php echo $form->textField($model,'content_uploadedby',array('size'=>30,'maxlength'=>30)); ?>

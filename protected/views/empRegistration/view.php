@@ -20,9 +20,12 @@ $this->menu=array(
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-	'emp_image',
-			'emp_username'
-	),
-)); ?>
+	'emp_username',
+			'emp_password',
+			'emp_firstname',
+			'emp_lastname',
+			'emp_mobno',
+			'emp_image'
+))); ?>
 
 <img alt="" width="100px" height="100px" src="<?php echo Yii::app()->request->baseUrl.Constants::$IMAGES_PATH.CHtml::encode($model->emp_image); ?>" />

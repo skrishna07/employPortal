@@ -6,7 +6,7 @@ class EmpDocumentController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	public $layout='//layouts/main';
 
 	/**
 	 * @return array action filters
@@ -28,16 +28,16 @@ class EmpDocumentController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('create'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-				'users'=>array('@'),
+				'actions'=>array('create','update','index','view'),
+				'roles'=>array('general','admin'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'actions'=>array('admin','delete','update'),
+				'roles'=>array('admin'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -63,21 +63,43 @@ class EmpDocumentController extends Controller
 	public function actionCreate()
 	{
 		$model=new EmpDocument;
-
+		
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['EmpDocument']))
 		{
+	
 			$model->attributes=$_POST['EmpDocument'];
 			$date=time();
 			
 			$model->createdate=date("Y-m-d",$date);
 			$model->updatedate=date("Y-m-d",$date);
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->doc_id));
-		}
-
+	
+		$model->save();
+			$tags=$_POST['tags'];
+	
+			$tag=explode(',', $tags);
+			
+			for($i=0;$i<count($tag);$i++)
+			{
+			$model2=new EmpDocTags();
+			//$model->menu_id=$menus[$i];
+			$model2->doc_id=$model->doc_id;
+			$model2->tags=$tag[$i];
+			if($model2->save()){
+			$valid = true;
+			}else{
+				$valid = false;
+			}	
+			
+			
+			}
+				
+			if($valid)
+				$this->redirect(array('admin'));
+			}
+		
 		$this->render('create',array(
 			'model'=>$model,
 		));
@@ -102,9 +124,29 @@ class EmpDocumentController extends Controller
 			
 			
 			$model->updatedate=date("Y-m-d",$date);
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->doc_id));
-		}
+			$model->save();
+		$tags=$_POST['tags'];
+			$tag=explode(',', $tags);
+			
+			for($i=0;$i<count($tag);$i++)
+			{
+			$model2=new EmpDocTags();
+			//$model->menu_id=$menus[$i];
+			$model2->doc_id=$model->doc_id;
+			$model2->tags=$tag[$i];
+			if($model2->save()){
+			$valid = true;
+			}else{
+				$valid = false;
+			}
+			
+			
+			}
+				
+			if($valid)
+				$this->redirect(array('admin'));
+			}
+	
 
 		$this->render('update',array(
 			'model'=>$model,

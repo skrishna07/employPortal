@@ -1,4 +1,4 @@
-<?php
+	<?php
 
 /**
  * This is the model class for table "emp_doc_tags".
