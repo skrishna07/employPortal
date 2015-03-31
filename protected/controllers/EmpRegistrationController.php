@@ -80,7 +80,7 @@ class EmpRegistrationController extends Controller
 			if (is_object($myfile) && get_class($myfile)==='CUploadedFile') {
 				$model->emp_image="path of folder to save image//{$myfile->name}";
 			}
-			$model->emp_username =substr($model->emp_firstname,0,1).$model->emp_lastname.'@BRADSOL.COM';
+			$model->emp_username =substr($model->emp_firstname,0,1).$model->emp_lastname.'@bradsol.com';
 			$model->emp_password = "password";
 			
 			if($model->save())

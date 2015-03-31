@@ -53,7 +53,7 @@ class EmpRegistration extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('emp_username, emp_password, emp_firstname, emp_lastname, emp_email, emp_mobno, emp_gender, emp_father_hus_name, emp_dob, emp_image, emp_identityproof, emp_presentaddress, emp_permenentaddress, emp_pancard, emp_passport, createdate, updatedate', 'required'),
-			array('emp_username, emp_password, emp_firstname, emp_lastname, emp_email, emp_mobno, emp_father_hus_name, emp_dob, emp_image, emp_identityproof, emp_presentaddress, emp_permenentaddress, emp_role, createdate, updatedate', 'length', 'max'=>30),
+			array('emp_username, emp_password, emp_firstname, emp_lastname, emp_email, emp_mobno, emp_father_hus_name, emp_dob, emp_image, emp_identityproof,  emp_role, createdate, updatedate', 'length', 'max'=>30),
 				array('emp_mobno','numerical', 'integerOnly'=>true),
 			
 				array('emp_email','email'),

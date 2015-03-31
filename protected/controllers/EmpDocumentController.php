@@ -173,8 +173,9 @@ class EmpDocumentController extends Controller
 	public function actionIndex()
 	{
 		$dataProvider=new CActiveDataProvider('EmpDocument');
+		$data=new CActiveDataProvider('EmpDocTags');
 		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+			'dataProvider'=>$dataProvider,'data'=>$data
 		));
 	}
 
@@ -183,6 +184,7 @@ class EmpDocumentController extends Controller
 	 */
 	public function actionAdmin()
 	{
+		
 		$model=new EmpDocument('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['EmpDocument']))

@@ -23,6 +23,7 @@ $this->menu=array(
 	'attributes'=>array(
 		'doc_id',
 		'document',
+			'tags',
 		'doc_uploadedby',
 		'createdate',
 		'updatedate',

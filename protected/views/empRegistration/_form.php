@@ -26,13 +26,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'emp_firstname'); ?>
-<input size="30" maxlength="30" name="EmpRegistration[emp_firstname]" id="EmpRegistration_emp_firstname" type="text" onchange="emptyfields()"/>			
+<input size="30" maxlength="30" name="EmpRegistration[emp_firstname]" id="EmpRegistration_emp_firstname" type="text" />			
 				<?php echo $form->error($model,'emp_firstname'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'emp_lastname'); ?>
-<input size="30" maxlength="30" name="EmpRegistration[emp_lastname]" id="EmpRegistration_emp_lastname" type="text" onchange="emptyfields()"/>			
+<input size="30" maxlength="30" name="EmpRegistration[emp_lastname]" id="EmpRegistration_emp_lastname" type="text" />			
 <?php echo $form->error($model,'emp_lastname'); ?>
 	</div>
 
@@ -60,6 +60,7 @@
 		<?php echo $form->error($model,'emp_gender'); ?>
 		<?php echo $form->error($model,'emp_gender'); ?>
 	</div>
+
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'emp_father_hus_name'); ?>
@@ -125,11 +126,7 @@ $this->widget('zii.widgets.jui.CJuiDatePicker', array(
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
-	<div class="row" style="visibility: hidden;">
-		<?php echo $form->labelEx($model,'emp_username'); ?>
-		<?php echo $form->textField($model,'emp_username',array('size'=>30,'maxlength'=>30)); ?>
-		<?php echo $form->error($model,'emp_username'); ?>
-	</div>
+	
 
 <?php $this->endWidget(); ?>
 
