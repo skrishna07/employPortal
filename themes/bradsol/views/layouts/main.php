@@ -13,25 +13,26 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-	
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bradsol/jquery.dataTables.css"/>
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bradsol/dataTables.responsive.css"/>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bradsol/bootstrap.min.css" media="screen, projection" />
 	
 	<!--[if lt IE 8]>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
 	<![endif]-->
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/script.js"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-latest.min.js" type="text/javascript"></script>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js" type="text/javascript"></script>
+	<script type="text/javascript" charset="utf8"  src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.dataTables.js"></script>
 	
-	
-	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/script.js"></script>
 	
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
 <body>
-<header>
+
     <div class="header-bs">
-<div class="logo"><img class="img-responsive" src="<?php echo Yii::app()->request->baseUrl; ?>/img/bradsol.jpg" alt=""></div>
+<div class="logo"><img class="img-responsive" src="<?php echo Yii::app()->request->baseUrl; ?>/img/bradsol.jpg" alt=""/></div>
 	   <div class="ads">
 	   
    <div id='cssmenu' style="margin-top:43px;">
@@ -95,7 +96,7 @@
 		<div style="clear:both;"></div>
 	</div>
 	
-   </header>
+  
    
      
 

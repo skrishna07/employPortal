@@ -28,30 +28,112 @@ $('.search-form form').submit(function(){
 
 <h1>Manage Emp Documents</h1>
 
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bradsol/jquery.dataTables.css"/>
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bradsol/dataTables.responsive.css"/>
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/bradsol/bootstrap.min.css" media="screen, projection" />
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/bootstrap.min.js" type="text/javascript"></script>
+	<script type="text/javascript" charset="utf8"  src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.dataTables.js"></script>
+	
+	
+<script type="text/javascript">
+$(document).ready( function () {
+    $('#table_id').DataTable({
+    	responsive: true});
+} );
+</script>
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'emp-document-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
-	'columns'=>array(
-		'doc_id',
-		'document',
-		'doc_uploadedby',
-		'createdate',
-		'updatedate',
-		array(
-			'class'=>'CButtonColumn',
-		),
-	),
-)); ?>
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".delete_sin").on('click', function () {
+	
+		var url = $('#app1URL').val();
+	
+	    
+	    var id = $(this).data('id');
+       
+	    $.ajax({
+	   type: "POST",
+	   data: {id:id},
+	   url:url,
+	   success: function(msg){
+		   alert('success')
+		   window.location.reload();
+	   }
+	});
+	});
+});
+</script>
+</head>
+<body>
+
+
+
+<input type="hidden" id="app1URL"  value="<?php echo $this->createUrl
+
+('empDocument/delete')?>"/>
+<table id="table_id" class="display">
+    <thead>
+        <tr>
+        
+            <th>id </th>
+            <th>document</th>
+            <th>tags</th>
+            <th>uploaded</th>
+            <th>createdate</th>
+            <th>updatedate</th>
+           <th>options</th>
+       
+        </tr>
+    </thead>
+    <tbody>
+  
+  <?php foreach($model as $value)
+  {
+  	?>
+  <tr>
+            <td><?php echo $value->doc_id?></td>
+             <td><?php echo $value->document?></td>
+            
+             <td> <?php  
+            
+               foreach($model2 as $value2)
+               {
+               	if($value->doc_id==$value2->doc_id)
+               	{
+                echo $value2->tags.","; 
+               	}
+               	
+               }
+               ?>
+               </td>
+               
+            <td><?php echo $value->doc_uploadedby?></td>
+             <td><?php echo $value->createdate?></td>
+               <td><?php echo $value->updatedate?></td>
+           <td><a href="view/<?php echo $value->doc_id?>"><img style="width:25px;height:25px" src="<?php echo Yii::app()->request->baseUrl; ?>/img/view.jpg"/></a><br>
+               <a href="" data-id="<?php echo $value->doc_id?>" class="delete_sin"><img style="width:25px;height:25px" src="<?php echo Yii::app()->request->baseUrl; ?>/img/delete.jpg"/></a><br>
+               <a href="update/id/<?php echo $value->doc_id?>"><img style="width:25px;height:25px" src="<?php echo Yii::app()->request->baseUrl; ?>/img/update.jpg"/></a></td>
+              </tr>
+               
+    <?php 
+  }
+    ?>
+    
+          
+       
+        
+  
+ 
+    </tbody>
+</table>
+
+</body>
+</html>

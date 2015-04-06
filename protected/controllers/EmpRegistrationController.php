@@ -36,7 +36,7 @@ class EmpRegistrationController extends Controller
 				'roles'=>array('general','admin'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete','update'),
+				'actions'=>array('admin','delete','update',"download"),
 				'roles'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -71,7 +71,7 @@ class EmpRegistrationController extends Controller
 		{
 			$model->attributes=$_POST['EmpRegistration'];
 		
-			$model->emp_password=$model->emp_username;
+			
 			$date=time();
 		
 			$model->createdate=date("Y-m-d",$date);
@@ -80,7 +80,7 @@ class EmpRegistrationController extends Controller
 			if (is_object($myfile) && get_class($myfile)==='CUploadedFile') {
 				$model->emp_image="path of folder to save image//{$myfile->name}";
 			}
-			$model->emp_username =substr($model->emp_firstname,0,1).$model->emp_lastname.'@bradsol.com';
+			$model->emp_username =substr($model->emp_firstname,0,1).$model->emp_lastname;
 			$model->emp_password = "password";
 			
 			if($model->save())
@@ -287,6 +287,21 @@ $model=new EmpRegistration();
 		Yii::app()->user->setFlash('info', "Enter a valid e-mail!");
 		
 		}
-	
+		public function actionDownload($id) {
+			$model = EmpRegistration::model()->findByPk($id);
+			$file =  Yii::app()->request->baseUrl.Constants::$IMAGES_PATH.CHtml::encode($model->emp_image);
+			if (file_exists($file)) {
+				header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+				header('Content-Description: File Transfer');
+				header('Content-Type: application/octet-stream');
+				header('Content-Disposition: attachment; filename=' . $model->path);
+				header('Content-Length: ' . filesize($audio->path));
+				$model->downloaded = $model->downloaded + 1;
+				$model->save();
+			}else{
+				echo "file not exist: ".$file;
+			}
+			exit;
+		}
 
 }

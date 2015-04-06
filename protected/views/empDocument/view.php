@@ -11,21 +11,37 @@ $this->menu=array(
 	array('label'=>'List EmpDocument', 'url'=>array('index')),
 	array('label'=>'Create EmpDocument', 'url'=>array('create')),
 	array('label'=>'Update EmpDocument', 'url'=>array('update', 'id'=>$model->doc_id)),
-	array('label'=>'Delete EmpDocument', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->doc_id),'confirm'=>'Are you sure you want to delete this item?')),
+	
 	array('label'=>'Manage EmpDocument', 'url'=>array('admin')),
 );
 ?>
 
 <h1>View EmpDocument #<?php echo $model->doc_id; ?></h1>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'doc_id',
-		'document',
-			'tags',
-		'doc_uploadedby',
-		'createdate',
-		'updatedate',
-	),
-)); ?>
+<div class="view">
+
+	<?php echo CHtml::link("download", array('download', 'id'=>$model->doc_id)); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($model->getAttributeLabel('doc_id')); ?>:</b>
+	<?php echo CHtml::link(CHtml::encode($model->doc_id), array('view', 'id'=>$model->doc_id)); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($model->getAttributeLabel('document')); ?>:</b>
+	<?php echo CHtml::encode($model->document); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($model->getAttributeLabel('doc_uploadedby')); ?>:</b>
+	<?php echo CHtml::encode($model->doc_uploadedby); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($model->getAttributeLabel('createdate')); ?>:</b>
+	<?php echo CHtml::encode($model->createdate); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($model->getAttributeLabel('updatedate')); ?>:</b>
+	<?php echo CHtml::encode($model->updatedate); ?>
+	<br />
+
+
+</div>

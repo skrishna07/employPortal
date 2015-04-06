@@ -82,6 +82,6 @@
 	<?php echo CHtml::encode($data->updatedate); ?>
 	<br />
 
-	*/ ?>
+	*/?>
 
 </div>

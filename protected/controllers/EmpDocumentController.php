@@ -36,7 +36,7 @@ class EmpDocumentController extends Controller
 				'roles'=>array('general','admin'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete','update'),
+				'actions'=>array('admin','delete','update','download'),
 				'roles'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -75,8 +75,13 @@ class EmpDocumentController extends Controller
 			
 			$model->createdate=date("Y-m-d",$date);
 			$model->updatedate=date("Y-m-d",$date);
-	
+			$myfile=CUploadedFile::getInstance($model,'document');
+			if (is_object($myfile) && get_class($myfile)==='CUploadedFile') {
+				$model->document="path of folder to save image//{$myfile->name}";
+			}
 		$model->save();
+		if (is_object($myfile))
+			$myfile->saveAs(Yii::app()->basePath.Constants::$image_PATH.$myfile->name);
 			$tags=$_POST['tags'];
 	
 			$tag=explode(',', $tags);
@@ -97,7 +102,7 @@ class EmpDocumentController extends Controller
 			}
 				
 			if($valid)
-				$this->redirect(array('admin'));
+				$this->redirect(array('view','id'=>$model->doc_id));
 			}
 		
 		$this->render('create',array(
@@ -144,7 +149,7 @@ class EmpDocumentController extends Controller
 			}
 				
 			if($valid)
-				$this->redirect(array('admin'));
+				$this->redirect(array('view','id'=>$model->_id));
 			}
 	
 
@@ -158,14 +163,32 @@ class EmpDocumentController extends Controller
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
 	 * @param integer $id the ID of the model to be deleted
 	 */
-	public function actionDelete($id)
+	
+	public function actionDelete()
+		{
+		if (isset($_POST['id']))
+		{
+	
+		$id = $_POST['id'];
+	
+	$value=EmpDocTags::model()->findAllByAttributes( array(
+                        'doc_id'=>$id,
+                ));
+	foreach($value as $value)
 	{
-		$this->loadModel($id)->delete();
-
-		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+	$tag_id=$value->tag_id;
+	$this->loadModel1($tag_id)->delete();
 	}
+		
+		$this->loadModel($id)->delete();
+	
+	
+	
+	
+		}
+		}
+		
+	
 
 	/**
 	 * Lists all models.
@@ -175,7 +198,7 @@ class EmpDocumentController extends Controller
 		$dataProvider=new CActiveDataProvider('EmpDocument');
 		$data=new CActiveDataProvider('EmpDocTags');
 		$this->render('index',array(
-			'dataProvider'=>$dataProvider,'data'=>$data
+			'dataProvider'=>$dataProvider,
 		));
 	}
 
@@ -184,14 +207,21 @@ class EmpDocumentController extends Controller
 	 */
 	public function actionAdmin()
 	{
+		$id=array();
+		$model = EmpDocument::model()->findAll();
+		foreach($model as $value)
+		{
+			
+		$id[]=$value->doc_id;
 		
-		$model=new EmpDocument('search');
-		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['EmpDocument']))
-			$model->attributes=$_GET['EmpDocument'];
-
+			
+		}
+		$model2=EmpDocTags::model()->findAllByAttributes( array(
+				'doc_id'=>$id,	));
+			
 		$this->render('admin',array(
-			'model'=>$model,
+				'model'=>$model,'model2'=>$model2
+					
 		));
 	}
 
@@ -202,6 +232,13 @@ class EmpDocumentController extends Controller
 	 * @return EmpDocument the loaded model
 	 * @throws CHttpException
 	 */
+	public function loadModel1($id)
+	{
+		$model=EmpDocTags::model()->findByPk($id);
+		if($model===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $model;
+	}
 	public function loadModel($id)
 	{
 		$model=EmpDocument::model()->findByPk($id);
@@ -222,4 +259,22 @@ class EmpDocumentController extends Controller
 			Yii::app()->end();
 		}
 	}
+	
+public function actionDownload($id) {
+    $model = EmpDocument::model()->findByPk($id);
+    $file =  Yii::app()->request->baseUrl.Constants::$IMAGES_PATH.CHtml::encode($model->document);
+    if (file_exists($file)) {
+        header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+        header('Content-Description: File Transfer');
+        header('Content-Type: application/octet-stream');
+        header('Content-Disposition: attachment; filename=' . $model->path);
+        header('Content-Length: ' . filesize($audio->path));
+        $model->downloaded = $model->downloaded + 1;
+        $model->save();
+    }else{
+        echo "file not exist: ".$file;            
+    }
+    exit;
+}
+
 }

@@ -88,6 +88,8 @@ class EmpDocument extends CActiveRecord
 
 		$criteria->compare('doc_id',$this->doc_id);
 		$criteria->compare('document',$this->document,true);
+		
+		
 		$criteria->compare('doc_uploadedby',$this->doc_uploadedby,true);
 		$criteria->compare('createdate',$this->createdate,true);
 		$criteria->compare('updatedate',$this->updatedate,true);

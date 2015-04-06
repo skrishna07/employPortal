@@ -11,7 +11,6 @@ $this->menu=array(
 	array('label'=>'List EmpHelppage', 'url'=>array('index')),
 	array('label'=>'Create EmpHelppage', 'url'=>array('create')),
 	array('label'=>'Update EmpHelppage', 'url'=>array('update', 'id'=>$model->page_id)),
-	array('label'=>'Delete EmpHelppage', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->page_id),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manage EmpHelppage', 'url'=>array('admin')),
 );
 ?>

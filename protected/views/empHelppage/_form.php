@@ -8,8 +8,7 @@
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'emp-helppage-form',
-	'enableAjaxValidation'=>false,
-)); ?>
+	'enableAjaxValidation'=>false,)); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 

@@ -94,7 +94,7 @@ class EmpHelppageController extends Controller
 			}
 				
 			if($valid)
-				$this->redirect(array('admin'));
+				$this->redirect(array('view','id'=>$model->page_id));
 			}
 		
 		$this->render('create',array(
@@ -138,7 +138,7 @@ class EmpHelppageController extends Controller
 			}
 				
 			if($valid)
-				$this->redirect(array('admin'));
+				$this->redirect(array('view','id'=>$model->_id));
 			}
 
 		$this->render('update',array(
@@ -151,15 +151,29 @@ class EmpHelppageController extends Controller
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
 	 * @param integer $id the ID of the model to be deleted
 	 */
-	public function actionDelete($id)
+	public function actionDelete()
+{
+		if (isset($_POST['id']))
+		{
+	
+		$id = $_POST['id'];
+	
+	$value=EmpHelppageTags::model()->findAllByAttributes( array(
+                        'page_id'=>$id,
+                ));
+	foreach($value as $value)
 	{
-		$this->loadModel($id)->delete();
-
-		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+	$tag_id=$value->tag_id;
+$this->loadModel1($tag_id)->delete();
 	}
-
+		
+		$this->loadModel($id)->delete();
+	
+	
+	
+	
+		}
+		}
 	/**
 	 * Lists all models.
 	 */
@@ -176,13 +190,22 @@ class EmpHelppageController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new EmpHelppage('search');
-		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['EmpHelppage']))
-			$model->attributes=$_GET['EmpHelppage'];
-
+		
+		$id=array();
+		$model = EmpHelppage::model()->findAll();
+		foreach($model as $value)
+		{
+			
+		$id[]=$value->page_id;
+		
+			
+		}
+		$model2=EmpHelppageTags::model()->findAllByAttributes( array(
+				'page_id'=>$id,	));
+			
 		$this->render('admin',array(
-			'model'=>$model,
+				'model'=>$model,'model2'=>$model2
+					
 		));
 	}
 
@@ -200,7 +223,13 @@ class EmpHelppageController extends Controller
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
 	}
-
+	public function loadModel1($id)
+	{
+		$model=EmpHelppageTags::model()->findByPk($id);
+		if($model===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $model;
+	}
 	/**
 	 * Performs the AJAX validation.
 	 * @param EmpHelppage $model the model to be validated
