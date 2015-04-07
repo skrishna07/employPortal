@@ -76,17 +76,23 @@ class EmpRegistrationController extends Controller
 		
 			$model->createdate=date("Y-m-d",$date);
 			$model->updatedate=date("Y-m-d",$date);
-			$myfile=CUploadedFile::getInstance($model,'emp_image');
-			if (is_object($myfile) && get_class($myfile)==='CUploadedFile') {
-				$model->emp_image="path of folder to save image//{$myfile->name}";
-			}
+			
 			$model->emp_username =substr($model->emp_firstname,0,1).$model->emp_lastname;
 			$model->emp_password = "password";
+			$uploadedFile=CUploadedFile::getInstance($model,'emp_image');
+			$uploadedFile1=CUploadedFile::getInstance($model,'emp_identityproof');
+			if(isset($uploadedFile)){
+				$model->emp_image=$uploadedFile;
+				$model->emp_identityproof=$uploadedFile1;
+			}
+			$model->save();
+			if($model->validate()){
 			
-			if($model->save())
-			{
-				if (is_object($myfile))
-					$myfile->saveAs(Yii::app()->basePath.Constants::$IMAGES_PATH.$myfile->name);
+			
+				$uploadedFile->saveAs(Yii::app()->basePath.Constants::$IMAGES_PATH.$uploadedFile->name);
+				$uploadedFile1->saveAs(Yii::app()->basePath.Constants::$IMAGES_PATH.$uploadedFile1->name);
+			
+			
 				$to=$model->emp_email;
 				$from='srikrishna.mekala@brasol.com';
 				$subject="";
@@ -133,10 +139,24 @@ class EmpRegistrationController extends Controller
 			$model->attributes=$_POST['EmpRegistration'];
 			$date=time();
 			$model->updatedate=date("m-d-Y",$date);
-			if($model->save())
+			$uploadedFile=CUploadedFile::getInstance($model,'emp_image');
+			$uploadedFile1=CUploadedFile::getInstance($model,'emp_identityproof');
+			if(isset($uploadedFile)){
+				$model->emp_image=$uploadedFile;
+				$model->emp_identityproof=$uploadedFile1;
+			}
+			$model->save();
+			if($model->validate()){
+					
+					
+				$uploadedFile->saveAs(Yii::app()->basePath.Constants::$IMAGES_PATH.$uploadedFile->name);
+				$uploadedFile1->saveAs(Yii::app()->basePath.Constants::$IMAGES_PATH.$uploadedFile1->name);
+					
+					
+			
 				$this->redirect(array('view','id'=>$model->emp_id));
 		}
-
+		}
 		$this->render('update',array(
 			'model'=>$model,
 		));
@@ -287,21 +307,23 @@ $model=new EmpRegistration();
 		Yii::app()->user->setFlash('info', "Enter a valid e-mail!");
 		
 		}
-		public function actionDownload($id) {
-			$model = EmpRegistration::model()->findByPk($id);
-			$file =  Yii::app()->request->baseUrl.Constants::$IMAGES_PATH.CHtml::encode($model->emp_image);
-			if (file_exists($file)) {
-				header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
-				header('Content-Description: File Transfer');
-				header('Content-Type: application/octet-stream');
-				header('Content-Disposition: attachment; filename=' . $model->path);
-				header('Content-Length: ' . filesize($audio->path));
-				$model->downloaded = $model->downloaded + 1;
-				$model->save();
-			}else{
-				echo "file not exist: ".$file;
-			}
-			exit;
-		}
-
+public function actionDownload($id) {
+    $model = EmpRegistration::model()->findByPk($id);
+      $path = Yii::app()->basePath.Constants::$IMAGES_PATH.$model->emp_image;
+      $f1 = fopen($path,'r');
+      $fcontent = stream_get_contents($f1);
+      fclose($f1);
+      
+      $fileName =$model->emp_image;
+      
+      $f2 = fopen(Yii::app()->basePath.'/downloades/'.$fileName,'c+');
+      if(fwrite($f2,$fcontent,strlen($fcontent)))
+      {
+      	Yii::app()->user->setFlash('success', "successfully downloaded in".Yii::app()->basePath.'/downloades/'.$fileName);
+      	$this->redirect(array('view','id'=>$model->emp_id));
+      fclose($f2);
+      
+      }
+   }
+		
 }

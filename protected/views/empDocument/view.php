@@ -17,7 +17,11 @@ $this->menu=array(
 ?>
 
 <h1>View EmpDocument #<?php echo $model->doc_id; ?></h1>
-
+<?php
+    foreach(Yii::app()->user->getFlashes() as $key => $message) {
+        echo '<div class="flash-' . $key . '">' . $message . "</div>\n";
+    }
+?>
 <div class="view">
 
 	<?php echo CHtml::link("download", array('download', 'id'=>$model->doc_id)); ?>

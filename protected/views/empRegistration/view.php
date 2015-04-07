@@ -15,6 +15,18 @@ $this->menu=array(
 	array('label'=>'Manage EmpRegistration', 'url'=>array('admin')),
 );
 ?>
+<?php
+    foreach(Yii::app()->user->getFlashes() as $key => $message) {
+        echo '<div class="flash-' . $key . '">' . $message . "</div>\n";
+    }
+?>
+<?php 
+$path = Yii::app()->basePath.'/img/'.CHtml::encode($model->emp_image);
+$yourImageUrl = Yii::app()->assetManager->publish($path);
+$path1 = Yii::app()->basePath.'/img/'.CHtml::encode($model->emp_identityproof);
+$yourImageUrl1 = Yii::app()->assetManager->publish($path);
+
+?>
 
 <h1>View EmpRegistration #<?php echo $model->emp_id; ?></h1>
 <div class="view">
@@ -61,11 +73,11 @@ $this->menu=array(
 	<br />
 
 	<b><?php echo CHtml::encode($model->getAttributeLabel('emp_image')); ?>:</b>
-	<img alt="" width="100px" height="100px" src="<?php echo Yii::app()->request->baseUrl.Constants::$IMAGES_PATH.CHtml::encode($model->emp_image); ?>" />
+	<img alt="" width="100px" height="100px" src="<?php echo $yourImageUrl ?>" />
 	<br />
 
 	<b><?php echo CHtml::encode($model->getAttributeLabel('emp_identityproof')); ?>:</b>
-	<img alt="" width="100px" height="100px" src="<?php echo Yii::app()->request->baseUrl.Constants::$IMAGES_PATH.CHtml::encode($model->emp_identityproof); ?>" />
+	<img alt="" width="100px" height="100px" src="<?php echo $yourImageUrl1 ?>" />
 		<br />
 
 	<b><?php echo CHtml::encode($model->getAttributeLabel('emp_presentaddress')); ?>:</b>

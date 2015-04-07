@@ -7,9 +7,10 @@
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'emp-document-form',
-	'enableAjaxValidation'=>false,
-)); ?>
+        'id'=>'emp-document-form',
+        'enableAjaxValidation'=>false,
+        'htmlOptions' => array('enctype' => 'multipart/form-data'),
+        )); ?>
 <?php
     foreach(Yii::app()->user->getFlashes() as $key => $message) {
         echo '<div class="flash-' . $key . '">' . $message . "</div>\n";

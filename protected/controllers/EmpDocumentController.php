@@ -62,7 +62,7 @@ class EmpDocumentController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new EmpDocument;
+		$model=new EmpDocument();
 		
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -75,13 +75,19 @@ class EmpDocumentController extends Controller
 			
 			$model->createdate=date("Y-m-d",$date);
 			$model->updatedate=date("Y-m-d",$date);
-			$myfile=CUploadedFile::getInstance($model,'document');
-			if (is_object($myfile) && get_class($myfile)==='CUploadedFile') {
-				$model->document="path of folder to save image//{$myfile->name}";
+			$uploadedFile=CUploadedFile::getInstance($model,'document');
+			
+			if(isset($uploadedFile)){
+				$model->document=$uploadedFile;
 			}
-		$model->save();
-		if (is_object($myfile))
-			$myfile->saveAs(Yii::app()->basePath.Constants::$image_PATH.$myfile->name);
+			$model->save();
+			if($model->validate()){
+			
+			
+				$uploadedFile->saveAs(Yii::app()->basePath.Constants::$FILES_PATH.$uploadedFile->name);
+			}
+			
+			
 			$tags=$_POST['tags'];
 	
 			$tag=explode(',', $tags);
@@ -129,7 +135,19 @@ class EmpDocumentController extends Controller
 			
 			
 			$model->updatedate=date("Y-m-d",$date);
+			
+			$uploadedFile=CUploadedFile::getInstance($model,'document');
+				
+			if(isset($uploadedFile)){
+				$model->document=$uploadedFile;
+			}
 			$model->save();
+			if($model->validate()){
+					
+					
+				$uploadedFile->saveAs(Yii::app()->basePath.Constants::$FILES_PATH.$uploadedFile->name);
+			}
+				
 		$tags=$_POST['tags'];
 			$tag=explode(',', $tags);
 			
@@ -149,7 +167,7 @@ class EmpDocumentController extends Controller
 			}
 				
 			if($valid)
-				$this->redirect(array('view','id'=>$model->_id));
+				$this->redirect(array('view','id'=>$model->doc_id));
 			}
 	
 
@@ -262,19 +280,20 @@ class EmpDocumentController extends Controller
 	
 public function actionDownload($id) {
     $model = EmpDocument::model()->findByPk($id);
-    $file =  Yii::app()->request->baseUrl.Constants::$IMAGES_PATH.CHtml::encode($model->document);
-    if (file_exists($file)) {
-        header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
-        header('Content-Description: File Transfer');
-        header('Content-Type: application/octet-stream');
-        header('Content-Disposition: attachment; filename=' . $model->path);
-        header('Content-Length: ' . filesize($audio->path));
-        $model->downloaded = $model->downloaded + 1;
-        $model->save();
-    }else{
-        echo "file not exist: ".$file;            
-    }
-    exit;
-}
-
+      $path = Yii::app()->basePath.Constants::$FILES_PATH.$model->document;
+      $f1 = fopen($path,'r');
+      $fcontent = stream_get_contents($f1);
+      fclose($f1);
+      
+      $fileName =$model->document;
+      
+      $f2 = fopen(Yii::app()->basePath.'/downloades/'.$fileName,'c+');
+      if(fwrite($f2,$fcontent,strlen($fcontent)))
+      {
+      	Yii::app()->user->setFlash('success', "successfully downloaded in".Yii::app()->basePath.'/downloades/'.$fileName);
+      	$this->redirect(array('view','id'=>$model->doc_id));
+      fclose($f2);
+      
+      }
+   }
 }
