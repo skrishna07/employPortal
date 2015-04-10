@@ -44,6 +44,20 @@ return array(
 
 	// application components
 	'components'=>array(
+			'widgetFactory' => array(
+					'widgets' => array(
+							'ERedactorWidget' => array(
+									'options'=>array(
+											'lang'=>'fi',
+											'buttons'=>array(
+													'formatting', '|', 'bold', 'italic', 'deleted', '|',
+													'unorderedlist', 'orderedlist', 'outdent', 'indent', '|',
+													'image', 'video', 'link', '|', 'html',
+											),
+									),
+							),
+					),
+			),
 	'user'=>array(
 				'class' => 'WebUser',
 		),

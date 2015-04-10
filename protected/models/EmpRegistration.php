@@ -55,7 +55,8 @@ class EmpRegistration extends CActiveRecord
 			array('emp_username, emp_password, emp_firstname, emp_lastname, emp_email, emp_mobno, emp_gender, emp_father_hus_name, emp_dob, emp_image, emp_identityproof, emp_presentaddress, emp_permenentaddress, emp_pancard, emp_passport, createdate, updatedate', 'required'),
 			array('emp_username, emp_password, emp_firstname, emp_lastname, emp_email, emp_mobno, emp_father_hus_name, emp_dob, emp_image, emp_identityproof,  emp_role, createdate, updatedate', 'length', 'max'=>30),
 				array('emp_mobno','numerical', 'integerOnly'=>true),
-			
+				array('emp_image', 'file', 'allowEmpty'=>true, 'types'=>'jpg,jpeg,gif,png'),
+				array('emp_identityproof', 'file', 'allowEmpty'=>true, 'types'=>'jpg,jpeg,gif,png'),
 				array('emp_email','email'),
 				array('emp_username','unique'),
 				array('emp_gender', 'length', 'max'=>1),
@@ -90,7 +91,7 @@ class EmpRegistration extends CActiveRecord
 			'emp_email' => ' Email',
 			'emp_mobno' => 'Mobile No',
 			'emp_gender' => 'Gender',
-			'emp_father_hus_name' => 'Father/ Hus Name',
+			'emp_father_hus_name' => 'Father/ Husbend Name',
 			'emp_dob' => 'Dob',
 			'emp_image' => ' Image',
 			'emp_identityproof' => 'Identityproof',

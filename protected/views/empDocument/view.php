@@ -24,7 +24,7 @@ $this->menu=array(
 ?>
 <div class="view">
 
-	<?php echo CHtml::link("download", array('download', 'id'=>$model->doc_id)); ?>
+	<?php echo CHtml::link("download", array('DownloadFiles', 'id'=>$model->doc_id)); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($model->getAttributeLabel('doc_id')); ?>:</b>

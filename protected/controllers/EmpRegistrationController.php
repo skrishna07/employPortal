@@ -32,11 +32,11 @@ class EmpRegistrationController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('index','view','changepassword'),
-				'roles'=>array('general','admin'),
+				'actions'=>array('index','view','changepassword','admin','update'),
+				'roles'=>array('general'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete','update',"download"),
+				'actions'=>array('admin','delete','update'),
 				'roles'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -77,7 +77,7 @@ class EmpRegistrationController extends Controller
 			$model->createdate=date("Y-m-d",$date);
 			$model->updatedate=date("Y-m-d",$date);
 			
-			$model->emp_username =substr($model->emp_firstname,0,1).$model->emp_lastname;
+			$model->emp_username =strtolower(substr($model->emp_firstname,0,1).$model->emp_lastname);
 			$model->emp_password = "password";
 			$uploadedFile=CUploadedFile::getInstance($model,'emp_image');
 			$uploadedFile1=CUploadedFile::getInstance($model,'emp_identityproof');
@@ -85,7 +85,10 @@ class EmpRegistrationController extends Controller
 				$model->emp_image=$uploadedFile;
 				$model->emp_identityproof=$uploadedFile1;
 			}
-			$model->save();
+			if($model->save())
+			{
+				Yii::app()->user->setFlash('error', "old password and new password same");
+			}
 			if($model->validate()){
 			
 			

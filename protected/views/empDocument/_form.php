@@ -27,13 +27,13 @@
 	</div>
 <div class="row">
 		<?php echo $form->labelEx($model,'tags'); ?>
-		<input size="30" maxlength="30" name="tags" id="EmpDocument_doc_tags" type="text" />
+		<?php echo $form->textField($model,'tags',array('value'=>$tagsList));?>
 		<?php echo $form->error($model,'tags'); ?>
 	</div>
 	
 	<div class="row">
 		<?php echo $form->labelEx($model,'doc_uploadedby'); ?>
-		<?php echo $form->textField($model,'doc_uploadedby',array('size'=>30,'maxlength'=>30)); ?>
+		<?php echo $form->textField($model,'doc_uploadedby',array('size'=>30,'maxlength'=>30,'placeholder'=>Yii::app()->user->name ,'readonly'=>true,'value'=>Yii::app()->user->name)); ?>
 		<?php echo $form->error($model,'doc_uploadedby'); ?>
 	</div>
 

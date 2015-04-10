@@ -34,13 +34,13 @@
     <div class="header-bs">
 <div class="logo"><img class="img-responsive" src="<?php echo Yii::app()->request->baseUrl; ?>/img/bradsol.jpg" alt=""/></div>
 	   <div class="ads">
-	   
+	<?php if(Yii::app()->user->isGuest){}else{?>   
    <div id='cssmenu' style="margin-top:43px;">
 		<ul>
-		<li class='active'><a href='<?php echo $this->createUrl('site/index')?>'><span>Home</span></a></li>
+		<li class='active'><a href='<?php echo $this->createUrl('site/index1')?>'><span>Home</span></a></li>
 	 <li class='has-sub'><a href='#'><span>Registration</span></a>
       <ul>
-          <li><a href='<?php echo $this->createUrl('empRegistration/create')?>'><span>Create </span></a></li>
+        
            <li><a href='<?php echo $this->createUrl('empRegistration/index')?>'><span>View </span></a></li>
            <li><a href='<?php echo $this->createUrl('empRegistration/admin')?>'><span>Search </span></a></li>
            
@@ -68,21 +68,23 @@
   	 
 	</ul>
 	</div>
-   
+      <?php }?>
 	   </div>
+	  
 	   <div class="sign_in">
 	   
  <?php if(Yii::app()->user->isGuest){?>
 <div class="sign-in-absolute">
  
  <p><a href="<?php echo $this->createUrl('site/login')?>"><img src="<?php echo Yii::app()->request->baseUrl; ?>/img/signin.png" /></a></p>
+ <p><a href="<?php echo $this->createUrl('empRegistration/create')?>"><img  src="<?php echo Yii::app()->request->baseUrl; ?>/img/signup.png" /></a></p>
 </div>
 <?php }else{?>
 <div class="roe buttons"> 
-        <?php echo CHtml::link('resetpassword',array('Empregistration/reset')); ?>
+       <p><a class="reset" href="<?php echo $this->createUrl('empRegistration/reset')?>"><img src="<?php echo Yii::app()->request->baseUrl; ?>/img/change_pwd.png" /></a></p>
     </div>
 <div class="logout-not-absolute">
-<p>Welcome back !</p>
+<p>Welcome back <?php echo Yii::app()->user->name ?></p>
 
 
 

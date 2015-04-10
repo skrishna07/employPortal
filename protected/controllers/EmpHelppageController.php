@@ -27,16 +27,13 @@ class EmpHelppageController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('create'),
-				'users'=>array('*'),
-			),
+			
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update','view','index','admin'),
 				'roles'=>array('general'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('create','update','view','index','admin','delete'),
 				'roles'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -63,6 +60,7 @@ class EmpHelppageController extends Controller
 	public function actionCreate()
 	{
 		$model=new EmpHelppage;
+		$taglist="";
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -75,7 +73,10 @@ class EmpHelppageController extends Controller
 			$model->createdate=date("Y-m-d",$date);
 			$model->updateddate=date("Y-m-d",$date);
 			$model->save();
-		$tags=$_POST['tags'];
+			
+		$model1=new EmpHelppageTags();
+		$model1->attributes=$_POST['EmpHelppage'];
+		$tags=$model1->tags;
 			$tag=explode(',', $tags);
 			
 			for($i=0;$i<count($tag);$i++)
@@ -94,11 +95,11 @@ class EmpHelppageController extends Controller
 			}
 				
 			if($valid)
-				$this->redirect(array('view','id'=>$model->page_id));
+				$this->redirect(array('admin'));
 			}
 		
 		$this->render('create',array(
-			'model'=>$model,
+			'model'=>$model,'taglist'=>$taglist
 		));
 	}
 
@@ -109,22 +110,32 @@ class EmpHelppageController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
+		$taglist="";
 		$model=$this->loadModel($id);
-
+		$value=EmpHelppageTags::model()->findAllByAttributes( array(
+				'page_id'=>$id,
+		));
+		foreach($value as $value)
+		{
+			$tags[]=$value->tags;
+		}
+		
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
+		$taglist=implode(',', $tags);
 		if(isset($_POST['EmpHelppage']))
 		{
 			$model->attributes=$_POST['EmpHelppage'];
 			$date=time();
 			$model->updateddate=date("Y-m-d",$date);
-		$tags=$_POST['tags'];
+			$model2=new EmpHelppageTags();
+		$model2->attributes=$_POST['EmpHelppage'];
+		$tags=$model2->tags;
 			$tag=explode(',', $tags);
 			
 			for($i=0;$i<count($tag);$i++)
 			{
-			$model2=new EmpHelppageTags();
+			
 			//$model->menu_id=$menus[$i];
 			$model2->page_id=$model->page_id;
 			$model2->tags=$tag[$i];
@@ -138,11 +149,11 @@ class EmpHelppageController extends Controller
 			}
 				
 			if($valid)
-				$this->redirect(array('view','id'=>$model->_id));
+				$this->redirect(array('admin'));
 			}
 
 		$this->render('update',array(
-			'model'=>$model,
+			'model'=>$model,'taglist'=>$taglist
 		));
 	}
 

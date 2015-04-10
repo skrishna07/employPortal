@@ -30,18 +30,12 @@ $yourImageUrl1 = Yii::app()->assetManager->publish($path);
 
 <h1>View EmpRegistration #<?php echo $model->emp_id; ?></h1>
 <div class="view">
-<?php echo CHtml::link("download", array('download', 'id'=>$model->emp_id)); ?>
+
 	<b><?php echo CHtml::encode($model->getAttributeLabel('emp_id')); ?>:</b>
 	<?php echo CHtml::link(CHtml::encode($model->emp_id), array('view', 'id'=>$model->emp_id)); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($model->getAttributeLabel('emp_username')); ?>:</b>
-	<?php echo CHtml::encode($model->emp_username); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($model->getAttributeLabel('emp_password')); ?>:</b>
-	<?php echo CHtml::encode($model->emp_password); ?>
-	<br />
+	
 
 	<b><?php echo CHtml::encode($model->getAttributeLabel('emp_firstname')); ?>:</b>
 	<?php echo CHtml::encode($model->emp_firstname); ?>

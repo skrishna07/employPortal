@@ -1,14 +1,4 @@
-<?php
-/* @var $this SiteController */
-/* @var $model LoginForm */
-/* @var $form CActiveForm  */
-
-$this->pageTitle=Yii::app()->name . ' - Login';
-$this->breadcrumbs=array(
-	'Login',
-);
-?>
-
+<?php  if(Yii::app()->user->isGuest){?>
 <h1>Login</h1>
 
 <p>Please fill out the following form with your login credentials:</p>
@@ -47,9 +37,22 @@ $this->breadcrumbs=array(
 		<?php echo CHtml::submitButton('Login'); ?>
 	</div>
 <div class="roe buttons"> 
-        <?php echo CHtml::link('forgetpassword',array('Empregistration/forget')); ?>
+        <?php echo CHtml::link('forgetpassword',array('Empregistration/forget')); ?><br>
+        <?php echo CHtml::link('Are you new  user Sign Up here',array('empRegistration/create')); ?>
     </div>
     
 <?php $this->endWidget(); ?>
 </div><!-- form -->
 </div>
+<?php }
+else 
+{
+$this->pageTitle=Yii::app()->name;
+
+?>
+<h1>Welcome to  <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
+
+<p> Select the required option from menu</p>
+<?php 
+
+}?>

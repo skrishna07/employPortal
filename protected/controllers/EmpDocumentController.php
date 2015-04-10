@@ -27,16 +27,13 @@ class EmpDocumentController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('create'),
-				'users'=>array('*'),
-			),
+			
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update','index','view'),
-				'roles'=>array('general','admin'),
+				'actions'=>array('create','index','view','admin','download','DownloadFiles'),
+				'roles'=>array('general',),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete','update','download'),
+				'actions'=>array('admin','delete','update','download','DownloadFiles'),
 				'roles'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -63,6 +60,8 @@ class EmpDocumentController extends Controller
 	public function actionCreate()
 	{
 		$model=new EmpDocument();
+		//$model1=new EmpDocTags();
+		$tagsList = "";
 		
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -86,15 +85,14 @@ class EmpDocumentController extends Controller
 			
 				$uploadedFile->saveAs(Yii::app()->basePath.Constants::$FILES_PATH.$uploadedFile->name);
 			}
-			
-			
-			$tags=$_POST['tags'];
-	
+			$model2=new EmpDocTags();
+			$model2->attributes=$_POST['EmpDocument'];
+		$tags=$model2->tags;
 			$tag=explode(',', $tags);
 			
 			for($i=0;$i<count($tag);$i++)
 			{
-			$model2=new EmpDocTags();
+			
 			//$model->menu_id=$menus[$i];
 			$model2->doc_id=$model->doc_id;
 			$model2->tags=$tag[$i];
@@ -108,11 +106,11 @@ class EmpDocumentController extends Controller
 			}
 				
 			if($valid)
-				$this->redirect(array('view','id'=>$model->doc_id));
+				$this->redirect(array('admin'));
 			}
 		
 		$this->render('create',array(
-			'model'=>$model,
+			'model'=>$model,'tagsList'=>$tagsList
 		));
 	}
 
@@ -123,8 +121,18 @@ class EmpDocumentController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
+		$tags=array();
 		$model=$this->loadModel($id);
-
+		$tagsList="";
+		$value=EmpDocTags::model()->findAllByAttributes( array(
+				'doc_id'=>$id,
+		));
+		foreach($value as $value)
+		{
+			$tags[]=$value->tags;
+			
+		}
+		$tagsList=implode(',', $tags);
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
@@ -147,13 +155,17 @@ class EmpDocumentController extends Controller
 					
 				$uploadedFile->saveAs(Yii::app()->basePath.Constants::$FILES_PATH.$uploadedFile->name);
 			}
-				
-		$tags=$_POST['tags'];
+			$model2=new EmpDocTags();
+			$model2->attributes=$_POST['EmpDocument'];
+			$tags=$model2->tags;
 			$tag=explode(',', $tags);
+		
+		
+			
 			
 			for($i=0;$i<count($tag);$i++)
 			{
-			$model2=new EmpDocTags();
+			
 			//$model->menu_id=$menus[$i];
 			$model2->doc_id=$model->doc_id;
 			$model2->tags=$tag[$i];
@@ -167,12 +179,13 @@ class EmpDocumentController extends Controller
 			}
 				
 			if($valid)
-				$this->redirect(array('view','id'=>$model->doc_id));
+				$this->redirect(array('admin'));
 			}
 	
 
 		$this->render('update',array(
 			'model'=>$model,
+			'tagsList'=>$tagsList
 		));
 	}
 
@@ -278,7 +291,8 @@ class EmpDocumentController extends Controller
 		}
 	}
 	
-public function actionDownload($id) {
+public function actionDownload() {
+	$id = $_POST['id'];
     $model = EmpDocument::model()->findByPk($id);
       $path = Yii::app()->basePath.Constants::$FILES_PATH.$model->document;
       $f1 = fopen($path,'r');
@@ -288,12 +302,41 @@ public function actionDownload($id) {
       $fileName =$model->document;
       
       $f2 = fopen(Yii::app()->basePath.'/downloades/'.$fileName,'c+');
-      if(fwrite($f2,$fcontent,strlen($fcontent)))
-      {
-      	Yii::app()->user->setFlash('success', "successfully downloaded in".Yii::app()->basePath.'/downloades/'.$fileName);
-      	$this->redirect(array('view','id'=>$model->doc_id));
-      fclose($f2);
+     // if(fwrite($f2,$fcontent,strlen($fcontent)))
+     // {
+      	//Yii::app()->user->setFlash('success', "successfully downloaded in".Yii::app()->basePath.'/downloades/'.$fileName);
+      	//$this->redirect(array('view','id'=>$model->doc_id));
+      //fclose($f2);
       
-      }
+     // }
+    
+     
+   }
+   public function actionDownloadFiles($id)
+   {
+   	
+   	$model = EmpDocument::model()->findByPk($id);
+   	$src = Yii::app()->basePath.Constants::$FILES_PATH.$model->document;
+   	if(@file_exists($src)) {
+   		$path_parts = @pathinfo($src);
+   		//$mime = $this->__get_mime($path_parts['extension']);
+   		header('Content-Description: File Transfer');
+   		header('Content-Type: application/octet-stream');
+   		//header('Content-Type: '.$mime);
+   		header('Content-Disposition: attachment; filename='.basename($src));
+   		header('Content-Transfer-Encoding: binary');
+   		header('Expires: 0');
+   		header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
+   		header('Pragma: public');
+   		header('Content-Length: ' . filesize($src));
+   		ob_clean();
+   		flush();
+   		readfile($src);
+   	}
+   	 else {
+   		header("HTTP/1.0 404 Not Found");
+   		exit();
+   	}
+   
    }
 }

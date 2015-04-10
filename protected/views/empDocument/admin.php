@@ -48,11 +48,32 @@ $(document).ready( function () {
 
 
 
-
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".download").on('click', function () {
+	alert("jenje");
+		var url = $('#appURL').val();
+	
+	    
+	    var id = $(this).data('id');
+       
+	    $.ajax({
+	   type: "POST",
+	   data: {id:id},
+	   url:url,
+	   success: function(msg){
+		   alert('success')
+		   window.location.reload();
+	   }
+	});
+	});
+});
+</script>
 
 <script type="text/javascript">
 $(document).ready(function() {
 	$(".delete_sin").on('click', function () {
+	
 	
 		var url = $('#app1URL').val();
 	
@@ -74,7 +95,9 @@ $(document).ready(function() {
 </head>
 <body>
 
+<input type="hidden" id="appURL"  value="<?php echo $this->createUrl
 
+('empDocument/downloadFiles')?>"/>
 
 <input type="hidden" id="app1URL"  value="<?php echo $this->createUrl
 
@@ -120,7 +143,9 @@ $(document).ready(function() {
                <td><?php echo $value->updatedate?></td>
            <td><a href="view/<?php echo $value->doc_id?>"><img style="width:25px;height:25px" src="<?php echo Yii::app()->request->baseUrl; ?>/img/view.jpg"/></a><br>
                <a href="" data-id="<?php echo $value->doc_id?>" class="delete_sin"><img style="width:25px;height:25px" src="<?php echo Yii::app()->request->baseUrl; ?>/img/delete.jpg"/></a><br>
-               <a href="update/id/<?php echo $value->doc_id?>"><img style="width:25px;height:25px" src="<?php echo Yii::app()->request->baseUrl; ?>/img/update.jpg"/></a></td>
+               <a href="update/id/<?php echo $value->doc_id?>"><img style="width:25px;height:25px" src="<?php echo Yii::app()->request->baseUrl; ?>/img/update.jpg"/></a><br>
+                            </td>
+               
               </tr>
                
     <?php 
